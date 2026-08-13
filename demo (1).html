@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bibit · Operação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script>window.BIBIT_DEMO_DATA={"clientes": [{"nome": "Mare Nostrum", "status": "execução", "vr": 7197, "entrada": 1759752000000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Cerveja Proibida", "status": "execução", "vr": 6850, "entrada": 1760961600000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Verano Ultra", "status": "execução", "vr": 6400, "entrada": 1762171200000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Rock Brewing", "status": "execução", "vr": 6200, "entrada": 1763380800000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": -1300}, {"nome": "Brennstube", "status": "execução", "vr": 5980, "entrada": 1764590400000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "18k Wine", "status": "execução", "vr": 5800, "entrada": 1765800000000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Venga Vino", "status": "execução", "vr": 5650, "entrada": 1767614400000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Camaleon", "status": "execução", "vr": 5500, "entrada": 1768219200000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": -3000}, {"nome": "Garrafaria Serra Negra", "status": "execução", "vr": 5350, "entrada": 1769428800000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Bevi Protein", "status": "execução", "vr": 5200, "entrada": 1770033600000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Passarin", "status": "execução", "vr": 5100, "entrada": 1770638400000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Casa da Roça", "status": "execução", "vr": 4990, "entrada": 1771848000000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Salto de Fé", "status": "execução", "vr": 4900, "entrada": 1772452800000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Beijo da Onça", "status": "execução", "vr": 4800, "entrada": 1773057600000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Audux", "status": "execução", "vr": 4700, "entrada": 1773662400000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "GSN Online", "status": "execução", "vr": 4600, "entrada": 1774267200000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Mythic", "status": "execução", "vr": 4500, "entrada": 1774872000000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Cachaçarias Nobres", "status": "execução", "vr": 4400, "entrada": 1775476800000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Santuário do Caraça", "status": "execução", "vr": 4300, "entrada": 1776081600000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Ambix", "status": "execução", "vr": 4200, "entrada": 1776686400000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Tia Lucina", "status": "execução", "vr": 4100, "entrada": 1777291200000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Wetz Beverages", "status": "execução", "vr": 3990, "entrada": 1777377600000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Red Espresso", "status": "execução", "vr": 3900, "entrada": 1777464000000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "El Coffee", "status": "execução", "vr": 3850, "entrada": 1777550400000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Truycool", "status": "execução", "vr": 3800, "entrada": 1778500800000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Bananinha Carioca", "status": "execução", "vr": 3700, "entrada": 1780920000000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Salva", "status": "execução", "vr": 3600, "entrada": 1782129600000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Bairrista", "status": "execução", "vr": 3500, "entrada": 1783944000000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Cervejaria Buriti", "status": "execução", "vr": 1335, "entrada": 1785758400000, "saida": null, "ltv": 27303.93, "tmp": 8.57, "cross": 0, "up": 0, "down": 0}, {"nome": "Luigi Limoncello", "status": "churn", "vr": 5550, "entrada": 1765195200000, "saida": 1778241600000, "ltv": null, "tmp": 5.05, "cross": 0, "up": 0, "down": 0}, {"nome": "Dabomb", "status": "churn", "vr": 6342, "entrada": 1767614400000, "saida": 1780920000000, "ltv": null, "tmp": 5.05, "cross": 0, "up": 0, "down": 0}, {"nome": "APTK", "status": "churn", "vr": 3199, "entrada": 1771588800000, "saida": 1785412800000, "ltv": null, "tmp": 5.05, "cross": 0, "up": 0, "down": 0}, {"nome": "Winet", "status": "briefing", "vr": 0, "entrada": null, "saida": null, "ltv": null, "tmp": null, "cross": 0, "up": 0, "down": 0}, {"nome": "My Fruit", "status": "encerramento", "vr": 3400, "entrada": 1768824000000, "saida": 1788177600000, "ltv": null, "tmp": null, "cross": 0, "up": 0, "down": 0}, {"nome": "Dra. Marília", "status": "encerramento", "vr": 2900, "entrada": 1771243200000, "saida": 1788177600000, "ltv": null, "tmp": null, "cross": 0, "up": 0, "down": 0}], "vendas": [{"nome": "Linha Brasil + Sub-Rótulos — Mare Nostrum", "valor": 100003.5, "ts": 1786795200000, "m": 7, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Branding 360 — Fazenda Rio Pardo", "valor": 12500, "ts": 1786795200000, "m": 7, "y": 2026, "status": "encerrado/recebido"}, {"nome": "E-Commerce — Casa da Roça", "valor": 9800, "ts": 1784116800000, "m": 6, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Press Kit — Rock Brewing", "valor": 6400, "ts": 1784116800000, "m": 6, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Press Kit — Verano", "valor": 6400, "ts": 1784116800000, "m": 6, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Manual da Marca — Mare Nostrum", "valor": 5900, "ts": 1784116800000, "m": 6, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Vídeo IA — Wetz", "valor": 4800, "ts": 1784116800000, "m": 6, "y": 2026, "status": "encerrado/recebido"}, {"nome": "UGC Standard", "valor": 4300, "ts": 1781524800000, "m": 5, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Vídeos — Beijo da Onça", "valor": 3800, "ts": 1781524800000, "m": 5, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Fotos Basic — Casa da Roça", "valor": 2400, "ts": 1781524800000, "m": 5, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Vinheta — Mare Nostrum", "valor": 1900, "ts": 1781524800000, "m": 5, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Folders — Venga Vino", "valor": 1800, "ts": 1778846400000, "m": 4, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Pacote Vídeo — MyFruit", "valor": 2200, "ts": 1778846400000, "m": 4, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Apresentação Comercial — Casa da Roça", "valor": 1687.5, "ts": 1778846400000, "m": 4, "y": 2026, "status": "encerrado/recebido"}, {"nome": "Apresentação Impressa — Casa da Roça", "valor": 1599.0, "ts": 1786795200000, "m": 7, "y": 2026, "status": "encerrado/recebido"}], "respostas": [{"csat": 9.0, "nps": 7.92, "m": 4, "y": 2026}, {"csat": 9.0, "nps": 7.92, "m": 4, "y": 2026}, {"csat": 9.0, "nps": 7.92, "m": 4, "y": 2026}, {"csat": 9.0, "nps": 7.92, "m": 4, "y": 2026}, {"csat": 9.1, "nps": 8.02, "m": 5, "y": 2026}, {"csat": 9.1, "nps": 8.02, "m": 5, "y": 2026}, {"csat": 9.1, "nps": 8.02, "m": 5, "y": 2026}, {"csat": 9.1, "nps": 8.02, "m": 5, "y": 2026}, {"csat": 9.2, "nps": 8.12, "m": 6, "y": 2026}, {"csat": 9.2, "nps": 8.12, "m": 6, "y": 2026}, {"csat": 9.2, "nps": 8.12, "m": 6, "y": 2026}, {"csat": 9.2, "nps": 8.12, "m": 6, "y": 2026}, {"csat": 9.3, "nps": 8.26, "m": 7, "y": 2026}, {"csat": 9.3, "nps": 8.26, "m": 7, "y": 2026}, {"csat": 9.3, "nps": 8.26, "m": 7, "y": 2026}, {"csat": 9.3, "nps": 8.26, "m": 7, "y": 2026}], "ranking": [{"m": 4, "y": 2026, "prod": 91.37931034482759, "up": 0, "down": 0}, {"m": 4, "y": 2026, "prod": 91.37931034482759, "up": 0, "down": 0}, {"m": 4, "y": 2026, "prod": 91.37931034482759, "up": 0, "down": 0}, {"m": 4, "y": 2026, "prod": 91.37931034482759, "up": 0, "down": 0}, {"m": 4, "y": 2026, "prod": 91.37931034482759, "up": 0, "down": 0}, {"m": 5, "y": 2026, "prod": 93.44262295081968, "up": 0, "down": -1300}, {"m": 5, "y": 2026, "prod": 93.44262295081968, "up": 0, "down": 0}, {"m": 5, "y": 2026, "prod": 93.44262295081968, "up": 0, "down": 0}, {"m": 5, "y": 2026, "prod": 93.44262295081968, "up": 0, "down": 0}, {"m": 5, "y": 2026, "prod": 93.44262295081968, "up": 0, "down": 0}, {"m": 6, "y": 2026, "prod": 93.75, "up": 0, "down": 0}, {"m": 6, "y": 2026, "prod": 93.75, "up": 0, "down": -3000}, {"m": 6, "y": 2026, "prod": 93.75, "up": 0, "down": 0}, {"m": 6, "y": 2026, "prod": 93.75, "up": 0, "down": 0}, {"m": 6, "y": 2026, "prod": 93.75, "up": 0, "down": 0}, {"m": 7, "y": 2026, "prod": 93.93939393939394, "up": 0, "down": 0}, {"m": 7, "y": 2026, "prod": 93.93939393939394, "up": 0, "down": 0}, {"m": 7, "y": 2026, "prod": 93.93939393939394, "up": 0, "down": 0}, {"m": 7, "y": 2026, "prod": 93.93939393939394, "up": 0, "down": 0}, {"m": 7, "y": 2026, "prod": 93.93939393939394, "up": 0, "down": 0}], "geral": {"prodAnual": 93, "nrrAnual": 116.03, "nrrMensal": 189, "mrrAcum": 367366, "mrrAtual": 138392, "expDash": 161190, "expMes": null, "somaDown": -4300, "somaUp": 0, "churnPctAnual": 4.11, "vr": null, "entrada": null, "saida": null, "ltv": null, "tmp": null, "cCross": null, "cUp": null, "cDown": null, "valorVenda": null, "dataPag": null, "csatTraf": null, "csatSM": null, "csatRP": null, "csatVideo": null, "npsGeral": null, "mesAno": null, "tarTot": null, "tarAtr": null, "upMes": null, "downMes": null}};</script>
+<style>
+  :root{
+    --bg:#0a0c0a; --card:#141a15; --card2:#1a221b;
+    --sage:#5e9b78; --clay:#c89b76; --creme:#eee7df;
+    --muted:rgba(238,231,223,.55); --faint:rgba(238,231,223,.32);
+    --line:rgba(238,231,223,.07); --sage-dim:rgba(94,155,120,.16); --clay-dim:rgba(200,155,118,.16);
+    --radius:18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scrollbar-color:var(--card2) var(--bg)}
+  body{background:var(--bg);color:var(--creme);font-family:'Manrope',sans-serif;min-height:100vh;display:flex}
+  ::selection{background:var(--sage);color:#0a0c0a}
+  .mono{font-family:'Spline Sans Mono',monospace}
+
+  /* ---------- sidebar ---------- */
+  aside{width:228px;min-height:100vh;padding:28px 22px;border-right:1px solid var(--line);
+    display:flex;flex-direction:column;gap:26px;position:sticky;top:0;align-self:flex-start;
+    background:linear-gradient(180deg,rgba(20,26,21,.5),rgba(10,12,10,0))}
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand-dot{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--sage),#3c6b52);
+    display:grid;place-items:center;font-weight:800;font-size:15px;color:#0a0c0a}
+  .brand b{font-weight:800;font-size:15px;letter-spacing:.4px}
+  .brand span{display:block;font-size:10px;color:var(--muted);letter-spacing:2.4px;text-transform:uppercase;font-family:'Spline Sans Mono',monospace}
+  nav{display:flex;flex-direction:column;gap:6px}
+  .nav-label{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:2.2px;color:var(--faint);text-transform:uppercase;margin-bottom:4px}
+  .nav-item{padding:9px 12px;border-radius:10px;font-size:13px;font-weight:700;color:var(--muted);cursor:default}
+  .nav-item.ativo{background:var(--sage-dim);color:var(--creme);border:1px solid rgba(94,155,120,.28)}
+  .side-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+  .demo-flag{display:none;font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:1.6px;color:var(--clay);
+    border:1px dashed rgba(200,155,118,.45);border-radius:8px;padding:7px 10px;text-align:center}
+  body.demo .demo-flag{display:block}
+  .sync{font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--faint);letter-spacing:.6px;line-height:1.7}
+  .sync b{color:var(--muted);font-weight:500}
+  .btn-refresh{background:var(--card);border:1px solid var(--line);color:var(--creme);border-radius:10px;
+    padding:9px 12px;font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:1px;cursor:pointer;transition:.18s}
+  .btn-refresh:hover{border-color:var(--sage);color:var(--sage)}
+  .btn-refresh:focus-visible{outline:2px solid var(--sage);outline-offset:2px}
+
+  /* ---------- main ---------- */
+  main{flex:1;padding:30px 34px 60px;max-width:1460px}
+  header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:24px}
+  .eyebrow{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:2.6px;color:var(--sage);text-transform:uppercase;margin-bottom:8px}
+  h1{font-size:27px;font-weight:800;letter-spacing:-.4px}
+  h1 small{font-weight:500;color:var(--muted);font-size:15px;margin-left:10px}
+
+  .periodos{display:flex;flex-wrap:wrap;gap:6px}
+  .pill{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;
+    padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);
+    cursor:pointer;transition:.16s}
+  .pill:hover:not(:disabled){border-color:var(--sage);color:var(--creme)}
+  .pill.sel{background:var(--sage);border-color:var(--sage);color:#0a0c0a;font-weight:500}
+  .pill:disabled{opacity:.28;cursor:not-allowed}
+  .pill:focus-visible{outline:2px solid var(--sage);outline-offset:2px}
+
+  /* ---------- grid ---------- */
+  .grid{display:grid;grid-template-columns:repeat(20,1fr);gap:14px}
+  .card{grid-column:span 4;background:linear-gradient(160deg,var(--card2),var(--card) 62%);
+    border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px 16px;min-height:128px;
+    display:flex;flex-direction:column;justify-content:space-between;gap:8px;cursor:pointer;
+    box-shadow:0 10px 26px rgba(0,0,0,.28);transition:border-color .18s, transform .18s}
+  .card:hover{border-color:rgba(94,155,120,.4)}
+  .card.sel{border-color:var(--sage);box-shadow:0 10px 30px rgba(94,155,120,.14)}
+  .card:focus-visible{outline:2px solid var(--sage);outline-offset:2px}
+  .s5{grid-column:span 5}.s8{grid-column:span 8}
+  .card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .label{font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted)}
+  .tag{font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--clay);
+    border:1px solid rgba(200,155,118,.35);border-radius:6px;padding:2px 6px;text-transform:uppercase;white-space:nowrap}
+  .valor{font-size:30px;font-weight:800;letter-spacing:-.6px;line-height:1.05;font-variant-numeric:tabular-nums}
+  .valor .un{font-size:15px;font-weight:700;color:var(--muted);margin-left:5px}
+  .valor .pref{font-size:16px;font-weight:700;color:var(--muted);margin-right:7px}
+  .s8 .valor{font-size:36px}
+  .valor.neg{color:var(--clay)}
+  .card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:20px}
+  .delta{font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:.4px;border-radius:7px;padding:3px 7px}
+  .delta.up{color:var(--sage);background:var(--sage-dim)}
+  .delta.down{color:var(--clay);background:var(--clay-dim)}
+  .delta.flat{color:var(--faint);background:rgba(238,231,223,.05)}
+  .sub{font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--faint);letter-spacing:.4px;text-align:right}
+
+  .skel .valor,.skel .delta,.skel .sub{color:transparent!important;background:linear-gradient(90deg,var(--card2) 25%,#222c24 50%,var(--card2) 75%);
+    background-size:200% 100%;animation:sh 1.2s infinite;border-radius:8px}
+  @keyframes sh{to{background-position:-200% 0}}
+  @media (prefers-reduced-motion:reduce){.skel .valor,.skel .delta,.skel .sub{animation:none}}
+
+  /* ---------- evolução ---------- */
+  .painel{margin-top:26px;background:linear-gradient(160deg,var(--card2),var(--card) 62%);
+    border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:0 10px 26px rgba(0,0,0,.28)}
+  .painel-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:16px}
+  .painel-top h2{font-size:15px;font-weight:800;letter-spacing:.2px}
+  .painel-top h2 em{font-style:normal;color:var(--sage)}
+  .painel-top .hint{font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--faint);letter-spacing:.6px}
+  #chart-wrap{position:relative}
+  #chart{width:100%;height:230px;display:block}
+  #tip{position:absolute;pointer-events:none;background:#0e120f;border:1px solid var(--line);border-radius:10px;
+    padding:8px 11px;font-family:'Spline Sans Mono',monospace;font-size:11px;color:var(--creme);display:none;
+    transform:translate(-50%,-115%);white-space:nowrap;box-shadow:0 8px 20px rgba(0,0,0,.5)}
+  #tip b{color:var(--sage);font-weight:500}
+
+  .aviso{margin-top:16px;border:1px solid rgba(200,155,118,.35);background:var(--clay-dim);border-radius:12px;
+    padding:12px 16px;font-size:13px;color:var(--creme);display:none;line-height:1.55}
+  .aviso.on{display:block}
+  .aviso button{margin-left:10px;background:none;border:1px solid var(--clay);color:var(--clay);border-radius:8px;
+    padding:4px 10px;font-family:'Spline Sans Mono',monospace;font-size:10px;cursor:pointer}
+
+  footer{margin-top:34px;font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--faint);letter-spacing:.8px;line-height:1.9}
+
+  /* ---------- responsivo ---------- */
+  @media (max-width:1180px){
+    .card,.s5,.s8{grid-column:span 10}
+    .grid{grid-template-columns:repeat(20,1fr)}
+  }
+  @media (max-width:880px){
+    body{flex-direction:column}
+    aside{width:100%;min-height:0;position:static;flex-direction:row;align-items:center;padding:16px 20px;border-right:0;border-bottom:1px solid var(--line)}
+    nav,.side-foot .sync{display:none}
+    .side-foot{margin:0 0 0 auto;flex-direction:row;align-items:center}
+    main{padding:22px 18px 50px}
+  }
+  @media (max-width:640px){
+    .card,.s5,.s8{grid-column:span 20}
+    .valor{font-size:28px}
+    h1{font-size:22px}
+  }
+</style>
+</head>
+<body>
+
+<aside>
+  <div class="brand">
+    <div class="brand-dot">B</div>
+    <div><b>BIBIT</b><span>dashboards</span></div>
+  </div>
+  <nav>
+    <div class="nav-label">Painéis</div>
+    <div class="nav-item ativo">Operação</div>
+  </nav>
+  <div class="side-foot">
+    <div class="demo-flag">demo · dados de exemplo</div>
+    <button class="btn-refresh" id="btn-refresh" type="button">↻ atualizar</button>
+    <div class="sync">fonte <b>ClickUp</b><br>sync <b id="sync-ts">—</b></div>
+  </div>
+</aside>
+
+<main>
+  <header>
+    <div>
+      <div class="eyebrow">Bibit Marketing · Operação</div>
+      <h1 id="titulo">Acumulado <small id="titulo-sub">2026</small></h1>
+    </div>
+    <div class="periodos" id="periodos" role="tablist" aria-label="Período"></div>
+  </header>
+
+  <div class="aviso" id="aviso"></div>
+
+  <section class="grid" id="grid" aria-live="polite"></section>
+
+  <section class="painel">
+    <div class="painel-top">
+      <h2>Evolução mensal · <em id="chart-metric">MRR</em></h2>
+      <div class="hint">clique em um card para trocar a métrica · passe o mouse nos pontos</div>
+    </div>
+    <div id="chart-wrap">
+      <svg id="chart" preserveAspectRatio="none" aria-label="Gráfico de evolução mensal"></svg>
+      <div id="tip"></div>
+    </div>
+  </section>
+
+  <footer>
+    Métricas de meses passados marcadas com <span class="tag" style="position:static">reconstruído</span> são recalculadas pelas
+    datas de entrada e saída dos clientes na Growth — os demais valores vêm dos mesmos campos que alimentam o dashboard do ClickUp.
+  </footer>
+</main>
+
+<script>
+/* =====================================================================
+   BIBIT · OPERAÇÃO — mesmas informações do "DASHBOARD OPERAÇÃO - ACUMULADO"
+   do ClickUp, com seletor de período (acumulado + mês a mês).
+   ===================================================================== */
+
+const API = '/api/clickup?path=';
+const ANO = 2026;
+const MES_INICIO = 4; // histórico real começa em mai/2026 (índice 4)
+const MESES = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+const MESES_FULL = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+
+const LISTA = {
+  growth:   '901712531318',
+  vendas:   '901713519081',
+  csat:     '901713333681',
+  ranking:  '901713545639'
+};
+const CARD_2026 = '86e1fwefa';
+
+const CF = {
+  // Growth (clientes)
+  vr:      '65f9eee2-b80d-4a6b-959f-61395ae91b02',
+  entrada: 'db1abd50-bc00-4097-92b9-ec639fbe3b04',
+  saida:   'b969da4a-8bae-4f4c-9f8b-2919620a98e0',
+  ltv:     '0da302e9-b65c-4453-84b8-07bbec61ab62',
+  tmp:     '6e1ab131-d931-4f9f-a135-af8051d8fc13',
+  cCross:  'f698066f-80c2-4967-b81b-22fa29fc6c6b',
+  cUp:     'b087f4f3-25ac-4445-a315-f47f55339f33',
+  cDown:   '81c8e707-1e39-4ad0-b9d6-76d25535d611',
+  // Cross-Sell (vendas)
+  valorVenda: '01454349-1cb6-4e8a-a665-7d7e74420d64',
+  dataPag:    '435d3c37-e413-4362-9c21-bdba5b6473d0',
+  // CSAT - Envios
+  csatTraf:  'be7c4a7a-7781-456c-b151-248507fb1f5e',
+  csatSM:    '8e179fe1-98ef-4237-b617-2f9123a78f17',
+  csatRP:    '465fa81c-df60-48cb-8cab-a2aa33f1a2fc',
+  csatVideo: '5214a872-383d-4a0b-bc6d-088c5a86bbc1',
+  npsGeral:  '93264d0a-8fe6-429a-b8e8-1366e21fcf55',
+  mesAno:    '2a8be0f5-771a-4171-86af-c2a094bde38c',
+  // Ranking (por colaborador/mês)
+  tarTot:  '3d9a9019-b6e7-44e5-9c11-3151138c956a',
+  tarAtr:  'daf6f735-e7e3-4bed-bdc4-32a13ab4dc73',
+  upMes:   'e74909ad-8922-4bbf-a73c-159f04a8de45',
+  downMes: 'a2c17dd9-f8cb-4aba-a34b-90749273d82a',
+  // Card 2026
+  prodAnual:  '6f55aaa9-4bf9-495e-ba06-801a4ea6749a',
+  nrrAnual:   '891c9f54-d485-49fb-9e7e-0c873f044f27',
+  nrrMensal:  '6209c835-05b6-463c-af50-0525e3808285',
+  mrrAcum:    '606530af-374c-4e43-a6c5-eb00af6596df',
+  mrrAtual:   'd03b8a44-53f3-4074-99e5-b201652ec315',
+  expDash:    'aac533e2-c67d-4c5d-9b34-6ba50e50687f',
+  expMes:     '009008a9-e04f-4b15-b709-ebe2bb273bbc',
+  somaDown:   '9e92c006-5bfe-411e-82b0-bad30a44a8ff',
+  somaUp:     '998e1e49-18df-4214-84b4-eac4f29e8553',
+  churnPctAnual: 'c41d2f88-da53-4f7a-aa7f-74e49e723927'
+};
+
+const ATIVOS_STATUS = ['execução','execucao','atrasado'];
+
+/* ---------------- helpers ---------------- */
+const $ = (s) => document.querySelector(s);
+const num = (v) => { const n = parseFloat(String(v ?? '').replace(',', '.')); return isFinite(n) ? n : null; };
+const cfVal = (task, id) => { const f = (task.custom_fields || []).find(c => c.id === id); return f ? f.value : null; };
+const cfNum = (task, id) => num(cfVal(task, id));
+const fimMes = (m) => new Date(ANO, m + 1, 0, 23, 59, 59).getTime();
+const iniMes = (m) => new Date(ANO, m, 1).getTime();
+const hoje = new Date();
+const MES_ATUAL = (hoje.getFullYear() === ANO) ? hoje.getMonth() : 11;
+
+const fmtBRL0 = (v) => v == null ? '—' : v.toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+const fmtBRL2 = (v) => v == null ? '—' : v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmt2    = (v) => v == null ? '—' : v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmtInt  = (v) => v == null ? '—' : v.toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+
+function normaliza(s){ return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+
+function parseMesAno(txt, fallbackTs){
+  const t = normaliza(txt);
+  let m = null, y = null, mm;
+  if ((mm = t.match(/(\d{1,2})\s*[\/\-\.]\s*(\d{4})/))) { m = parseInt(mm[1], 10) - 1; y = parseInt(mm[2], 10); }
+  else {
+    for (let i = 0; i < 12; i++) if (t.includes(normaliza(MESES_FULL[i])) || t.match(new RegExp('\\b' + MESES[i] + '\\b'))) { m = i; break; }
+    const ym = t.match(/20\d{2}/); if (ym) y = parseInt(ym[0], 10);
+  }
+  if (m == null || y == null) {
+    if (!fallbackTs) return null;
+    const d = new Date(Number(fallbackTs)); m = d.getMonth(); y = d.getFullYear();
+  }
+  return (m >= 0 && m <= 11) ? { m, y } : null;
+}
+
+function mesDoCardRanking(task){
+  const t = normaliza(task.name);
+  for (let i = 0; i < 12; i++) if (t.includes(normaliza(MESES_FULL[i]))) {
+    const ym = t.match(/20\d{2}/); return { m: i, y: ym ? parseInt(ym[0], 10) : ANO };
+  }
+  const d = new Date(Number(task.date_created)); return { m: d.getMonth(), y: d.getFullYear() };
+}
+
+const media = (arr) => { const v = arr.filter(x => x != null && isFinite(x)); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null; };
+const soma  = (arr) => { const v = arr.filter(x => x != null && isFinite(x)); return v.length ? v.reduce((a, b) => a + b, 0) : 0; };
+const mesesEntre = (a, b) => (b - a) / (1000 * 60 * 60 * 24 * 30.44);
+
+/* ---------------- fetch ---------------- */
+async function fetchJSON(path){
+  const r = await fetch(API + encodeURIComponent(path));
+  if (!r.ok) throw new Error('HTTP ' + r.status + ' em ' + path);
+  return r.json();
+}
+async function fetchTasks(listId){
+  let page = 0, out = [];
+  while (true) {
+    const j = await fetchJSON(`list/${listId}/task?include_closed=true&subtasks=false&page=${page}`);
+    const t = j.tasks || [];
+    out = out.concat(t);
+    if (t.length < 100) break;
+    page++;
+    if (page > 20) break;
+  }
+  return out;
+}
+
+/* ---------------- parse ---------------- */
+function parseTudo(raw){
+  const clientes = raw.growth.map(t => {
+    const saidaCampo = cfNum(t, CF.saida);
+    const status = normaliza(t.status && t.status.status || t.status);
+    return {
+      nome: t.name,
+      status,
+      vr: cfNum(t, CF.vr) || 0,
+      entrada: cfNum(t, CF.entrada) || num(t.start_date) || num(t.date_created),
+      saida: saidaCampo || (status === 'churn' ? num(t.date_closed) : null),
+      ltv: cfNum(t, CF.ltv),
+      tmp: cfNum(t, CF.tmp),
+      cross: cfNum(t, CF.cCross) || 0,
+      up: cfNum(t, CF.cUp) || 0,
+      down: cfNum(t, CF.cDown) || 0
+    };
+  });
+
+  const vendas = raw.vendas.map(t => {
+    const ts = cfNum(t, CF.dataPag) || num(t.date_closed) || num(t.date_created);
+    const d = ts ? new Date(ts) : null;
+    return { nome: t.name, valor: cfNum(t, CF.valorVenda) || 0, ts, m: d ? d.getMonth() : null, y: d ? d.getFullYear() : null, status: normaliza(t.status && t.status.status || t.status) };
+  });
+
+  const respostas = raw.csat.map(t => {
+    const notas = [cfNum(t, CF.csatTraf), cfNum(t, CF.csatSM), cfNum(t, CF.csatRP), cfNum(t, CF.csatVideo)].filter(v => v != null && v > 0);
+    const per = parseMesAno(cfVal(t, CF.mesAno), t.date_created);
+    return { csat: notas.length ? soma(notas) / notas.length : null, nps: cfNum(t, CF.npsGeral), m: per ? per.m : null, y: per ? per.y : null };
+  });
+
+  const ranking = raw.ranking.map(t => {
+    const per = mesDoCardRanking(t);
+    const tot = cfNum(t, CF.tarTot), atr = cfNum(t, CF.tarAtr);
+    return { m: per.m, y: per.y, prod: (tot && tot > 0) ? ((tot - (atr || 0)) / tot) * 100 : null, up: cfNum(t, CF.upMes) || 0, down: cfNum(t, CF.downMes) || 0 };
+  });
+
+  const g = {}; for (const [k, id] of Object.entries(CF)) g[k] = cfNum(raw.card2026, id);
+  return { clientes, vendas, respostas, ranking, geral: g };
+}
+
+/* ---------------- cálculo ---------------- */
+function ativosEm(D, ts){ return D.clientes.filter(c => c.entrada && c.entrada <= ts && (!c.saida || c.saida > ts)); }
+function churnAte(D, m){ return D.clientes.filter(c => c.status === 'churn' && c.saida && new Date(c.saida).getFullYear() === ANO && new Date(c.saida).getMonth() <= m); }
+function churnNoMes(D, m){ return D.clientes.filter(c => c.status === 'churn' && c.saida && new Date(c.saida).getFullYear() === ANO && new Date(c.saida).getMonth() === m); }
+const respMes = (D, m) => D.respostas.filter(r => r.y === ANO && r.m === m);
+const rankMes = (D, m) => D.ranking.filter(r => r.y === ANO && r.m === m);
+const vendasMes = (D, m) => D.vendas.filter(v => v.y === ANO && v.m === m);
+
+function calcAcumulado(D){
+  const ativos = D.clientes.filter(c => ATIVOS_STATUS.includes(c.status));
+  const churn  = D.clientes.filter(c => c.status === 'churn');
+  const vendasAno = D.vendas.filter(v => v.y == null || v.y === ANO);
+  const respAno = D.respostas.filter(r => r.y == null || r.y === ANO);
+  const rankAno = D.ranking.filter(r => r.y === ANO);
+  const mrr = soma(ativos.map(c => c.vr));
+  const churnRS = soma(churn.map(c => c.vr));
+  const mrrBaseChurn = D.geral.mrrAcum || (mrr + churnRS);
+  const cross = soma(vendasAno.map(v => v.valor));
+  const up   = (D.geral.somaUp != null) ? D.geral.somaUp : soma(D.clientes.map(c => c.up));
+  const down = (D.geral.somaDown != null) ? D.geral.somaDown : soma(D.clientes.map(c => c.down));
+  const expCalc = cross + up + down;
+  return {
+    ativos: ativos.length,
+    mrr,
+    ticket: ativos.length ? mrr / ativos.length : null,
+    nrr: D.geral.nrrAnual,
+    prod: D.geral.prodAnual != null ? D.geral.prodAnual : media(rankAno.map(r => r.prod)),
+    nps: media(respAno.map(r => r.nps)),
+    csat: media(respAno.map(r => r.csat)),
+    ltv: media(D.clientes.filter(c => ATIVOS_STATUS.includes(c.status) && c.ltv > 0).map(c => c.ltv)),
+    churnRS, churnN: churn.length,
+    churnPct: mrrBaseChurn ? (churnRS / mrrBaseChurn) * 100 : null,
+    tmpChurn: media(churn.map(c => c.tmp != null ? c.tmp : (c.entrada && c.saida ? mesesEntre(c.entrada, c.saida) : null))),
+    tmpAtivos: media(ativos.map(c => c.tmp != null ? c.tmp : (c.entrada ? mesesEntre(c.entrada, Date.now()) : null))),
+    down, cross, up,
+    exp: D.geral.expDash != null ? D.geral.expDash : expCalc,
+    expCalc,
+    nVendas: vendasAno.length
+  };
+}
+
+function calcMes(D, m){
+  if (m < MES_INICIO || m > MES_ATUAL) return null;
+  const fim = fimMes(m), ini = iniMes(m);
+  const ativos = ativosEm(D, fim);
+  const mrr = soma(ativos.map(c => c.vr));
+  const mrrIni = soma(ativosEm(D, ini - 1).map(c => c.vr));
+  const chM = churnNoMes(D, m);
+  const churnRS = soma(chM.map(c => c.vr));
+  const rk = rankMes(D, m), rs = respMes(D, m), vd = vendasMes(D, m);
+  const chAcum = churnAte(D, m);
+  const cross = soma(vd.map(v => v.valor));
+  const up = rk.length ? soma(rk.map(r => r.up)) : null;
+  const down = rk.length ? soma(rk.map(r => r.down)) : null;
+  const atual = (m === MES_ATUAL);
+  return {
+    ativos: ativos.length,
+    mrr,
+    ticket: ativos.length ? mrr / ativos.length : null,
+    nrr: atual ? D.geral.nrrMensal : null,
+    prod: media(rk.map(r => r.prod)),
+    nps: media(rs.map(r => r.nps)),
+    csat: media(rs.map(r => r.csat)),
+    ltv: atual ? media(D.clientes.filter(c => ATIVOS_STATUS.includes(c.status) && c.ltv > 0).map(c => c.ltv)) : null,
+    churnRS, churnN: chM.length,
+    churnPct: mrrIni ? (churnRS / mrrIni) * 100 : null,
+    tmpChurn: chAcum.length ? media(chAcum.map(c => (c.entrada && c.saida) ? mesesEntre(c.entrada, c.saida) : null)) : null,
+    tmpAtivos: media(ativos.map(c => c.entrada ? mesesEntre(c.entrada, fim) : null)),
+    down, cross, up,
+    exp: (cross != null && up != null && down != null) ? cross + up + down : ((m === MES_ATUAL && D.geral.expMes != null) ? D.geral.expMes : null),
+    expCalc: null,
+    nVendas: vd.length
+  };
+}
+
+/* ---------------- métricas (mesmos 17 cards do ClickUp) ---------------- */
+const METRICAS = [
+  { id:'ativos',   label:'Clientes Ativos', span:'s5', get:d=>d.ativos,   fmt:fmtInt,  recon:true,  sub:d=>'carteira growth' },
+  { id:'mrr',      label:'MRR',             span:'s5', get:d=>d.mrr,      fmt:fmtBRL0, brl:true, recon:true },
+  { id:'ticket',   label:'Ticket Médio',    span:'s5', get:d=>d.ticket,   fmt:fmtBRL2, brl:true, recon:true, sub:()=>'mrr ÷ ativos' },
+  { id:'nrr',      label:'NRR',             span:'s5', get:d=>d.nrr,      fmt:fmt2,    un:'%' },
+  { id:'prod',     label:'Produtividade',   span:'',   get:d=>d.prod,     fmt:v=>v==null?'—':v.toLocaleString('pt-BR',{maximumFractionDigits:1}), un:'%' },
+  { id:'nps',      label:'NPS Geral',       span:'',   get:d=>d.nps,      fmt:fmt2 },
+  { id:'csat',     label:'CSAT',            span:'',   get:d=>d.csat,     fmt:fmt2 },
+  { id:'ltv',      label:'LTV',             span:'s8', get:d=>d.ltv,      fmt:fmtBRL2, brl:true, sub:()=>'média por cliente ativo' },
+  { id:'churnRS',  label:'Churn R$',        span:'',   get:d=>d.churnRS,  fmt:fmtBRL0, brl:true, inv:true },
+  { id:'churnN',   label:'Churn Nº',        span:'',   get:d=>d.churnN,   fmt:fmtInt,  inv:true },
+  { id:'churnPct', label:'Churn %',         span:'',   get:d=>d.churnPct, fmt:fmt2,    un:'%', inv:true },
+  { id:'tmpChurn', label:'TMP (churn)',     span:'',   get:d=>d.tmpChurn, fmt:fmt2,    recon:'mes', sub:()=>'meses' },
+  { id:'tmpAtivos',label:'TMP (ativos)',    span:'',   get:d=>d.tmpAtivos,fmt:fmt2,    recon:'mes', sub:()=>'meses' },
+  { id:'down',     label:'Down Sell −',     span:'',   get:d=>d.down,     fmt:fmtBRL0, brl:true, inv:true },
+  { id:'cross',    label:'Cross Sell +',    span:'',   get:d=>d.cross,    fmt:fmtBRL0, brl:true, sub:d=>d.nVendas?d.nVendas+' vendas':null },
+  { id:'up',       label:'Upsell +',        span:'',   get:d=>d.up,       fmt:fmtBRL0, brl:true },
+  { id:'expansao', label:'Expansão de Receita', span:'s8', get:d=>d.exp,  fmt:fmtBRL0, brl:true,
+    sub:d=>(d.expCalc!=null && d.exp!=null && Math.abs(d.expCalc-d.exp)>1)?('calc: R$ '+fmtBRL0(d.expCalc)):null }
+];
+
+/* ---------------- estado + render ---------------- */
+const state = { periodo:'acc', metric:'mrr', D:null, acc:null, meses:[] };
+
+function dadosPeriodo(){ return state.periodo === 'acc' ? state.acc : state.meses[state.periodo]; }
+function dadosAnterior(){ return (state.periodo === 'acc' || state.periodo <= MES_INICIO) ? null : state.meses[state.periodo - 1]; }
+
+function renderPeriodos(){
+  const box = $('#periodos'); box.innerHTML = '';
+  const mk = (txt, val, dis) => {
+    const b = document.createElement('button');
+    b.className = 'pill' + ((state.periodo === val) ? ' sel' : '');
+    b.textContent = txt; b.disabled = !!dis; b.setAttribute('role','tab');
+    b.onclick = () => { state.periodo = val; renderTudo(); };
+    box.appendChild(b);
+  };
+  mk('Acumulado', 'acc', false);
+  MESES.forEach((mn, i) => mk(mn, i, i < MES_INICIO || i > MES_ATUAL || !state.meses[i]));
+}
+
+function renderTitulo(){
+  if (state.periodo === 'acc') { $('#titulo').firstChild.textContent = 'Acumulado '; $('#titulo-sub').textContent = String(ANO); }
+  else {
+    const n = MESES_FULL[state.periodo];
+    $('#titulo').firstChild.textContent = n.charAt(0).toUpperCase() + n.slice(1) + ' ';
+    $('#titulo-sub').textContent = String(ANO);
+  }
+}
+
+function deltaChip(mDef, atual, ant){
+  if (state.periodo === 'acc' || ant == null || atual == null) return '';
+  const a = mDef.get(atual), b = mDef.get(ant);
+  if (a == null || b == null) return '';
+  const diff = a - b;
+  const pct = b !== 0 ? (diff / Math.abs(b)) * 100 : null;
+  if (Math.abs(diff) < 1e-9) return '<span class="delta flat">= vs ' + MESES[state.periodo - 1] + '</span>';
+  const melhor = mDef.inv ? diff < 0 : diff > 0;
+  const cls = melhor ? 'up' : 'down';
+  const sinal = diff > 0 ? '+' : '−';
+  const corpo = pct != null && isFinite(pct)
+    ? sinal + Math.abs(pct).toLocaleString('pt-BR', { maximumFractionDigits: 1 }) + '%'
+    : sinal + fmtBRL0(Math.abs(diff));
+  return '<span class="delta ' + cls + '">' + corpo + ' vs ' + MESES[state.periodo - 1] + '</span>';
+}
+
+function renderGrid(){
+  const grid = $('#grid'); grid.innerHTML = '';
+  const d = dadosPeriodo(), ant = dadosAnterior();
+  METRICAS.forEach(mDef => {
+    const v = d ? mDef.get(d) : null;
+    const card = document.createElement('div');
+    card.className = 'card ' + (mDef.span || '') + (state.metric === mDef.id ? ' sel' : '') + (d ? '' : ' skel');
+    card.tabIndex = 0; card.dataset.m = mDef.id;
+    const showRecon = d && state.periodo !== 'acc' && (mDef.recon === true || mDef.recon === 'mes') && v != null;
+    const neg = (v != null && v < 0);
+    const valorTxt = (v == null) ? '—'
+      : (mDef.brl ? '<span class="pref">R$</span>' + mDef.fmt(v) : mDef.fmt(v) + (mDef.un ? '<span class="un">' + mDef.un + '</span>' : ''));
+    const sub = (d && mDef.sub) ? mDef.sub(d) : null;
+    card.innerHTML =
+      '<div class="card-top"><span class="label">' + mDef.label + '</span>' +
+      (showRecon ? '<span class="tag">reconstruído</span>' : '') + '</div>' +
+      '<div class="valor' + (neg ? ' neg' : '') + '">' + valorTxt + '</div>' +
+      '<div class="card-foot">' + (d ? deltaChip(mDef, d, ant) : '<span class="delta flat">…</span>') +
+      '<span class="sub">' + (sub || '') + '</span></div>';
+    card.onclick = () => { state.metric = mDef.id; renderGrid(); renderChart(); };
+    card.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.onclick(); } };
+    grid.appendChild(card);
+  });
+}
+
+/* ---------------- gráfico ---------------- */
+function serieMetrica(id){
+  const mDef = METRICAS.find(x => x.id === id);
+  const pts = [];
+  for (let m = MES_INICIO; m <= MES_ATUAL; m++) {
+    const d = state.meses[m];
+    pts.push({ m, v: d ? mDef.get(d) : null });
+  }
+  return { mDef, pts };
+}
+
+function renderChart(){
+  const svg = $('#chart'); const { mDef, pts } = serieMetrica(state.metric);
+  $('#chart-metric').textContent = mDef.label;
+  const W = svg.clientWidth || 900, H = 230, padL = 14, padR = 14, padT = 18, padB = 30;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const vals = pts.map(p => p.v).filter(v => v != null);
+  svg.innerHTML = '';
+  if (!vals.length) {
+    svg.innerHTML = `<text x="${W/2}" y="${H/2}" fill="rgba(238,231,223,.35)" font-family="Spline Sans Mono" font-size="12" text-anchor="middle">sem histórico para esta métrica</text>`;
+    return;
+  }
+  let min = Math.min(...vals), max = Math.max(...vals);
+  if (min === max) { min -= Math.abs(min) * 0.1 || 1; max += Math.abs(max) * 0.1 || 1; }
+  const range = max - min; min -= range * 0.12; max += range * 0.12;
+  const X = (i) => padL + (i * (W - padL - padR)) / Math.max(1, pts.length - 1);
+  const Y = (v) => padT + (H - padT - padB) * (1 - (v - min) / (max - min));
+
+  let gridLines = '';
+  for (let g = 0; g <= 3; g++) {
+    const y = padT + ((H - padT - padB) * g) / 3;
+    gridLines += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="rgba(238,231,223,.06)" stroke-width="1"/>`;
+  }
+
+  let segs = [], seg = [];
+  pts.forEach((p, i) => { if (p.v == null) { if (seg.length) segs.push(seg); seg = []; } else seg.push({ ...p, i }); });
+  if (seg.length) segs.push(seg);
+
+  let paths = '';
+  segs.forEach(s => {
+    const line = s.map((p, k) => (k ? 'L' : 'M') + X(p.i) + ' ' + Y(p.v)).join(' ');
+    if (s.length > 1) {
+      const area = line + ` L ${X(s[s.length - 1].i)} ${H - padB} L ${X(s[0].i)} ${H - padB} Z`;
+      paths += `<path d="${area}" fill="rgba(94,155,120,.12)"/>`;
+      paths += `<path d="${line}" fill="none" stroke="#5e9b78" stroke-width="2.2" stroke-linecap="round"/>`;
+    }
+  });
+
+  let dots = '', labels = '';
+  pts.forEach((p, i) => {
+    labels += `<text x="${X(i)}" y="${H - 10}" fill="rgba(238,231,223,.4)" font-family="Spline Sans Mono" font-size="10" text-anchor="middle">${MESES[p.m]}</text>`;
+    if (p.v == null) return;
+    const selMes = state.periodo === p.m;
+    dots += `<circle data-i="${i}" cx="${X(i)}" cy="${Y(p.v)}" r="${selMes ? 6 : 4.2}" fill="${selMes ? '#c89b76' : '#5e9b78'}" stroke="#0a0c0a" stroke-width="2" style="cursor:pointer"/>`;
+  });
+
+  svg.innerHTML = gridLines + paths + dots + labels;
+
+  const tip = $('#tip');
+  svg.querySelectorAll('circle').forEach(c => {
+    const i = Number(c.dataset.i), p = pts[i];
+    const mostrar = () => {
+      const txt = mDef.brl ? 'R$ ' + mDef.fmt(p.v) : mDef.fmt(p.v) + (mDef.un || '');
+      tip.innerHTML = '<b>' + MESES[p.m] + '/' + ANO + '</b> · ' + txt;
+      tip.style.left = (X(i) / W * 100) + '%';
+      tip.style.top = (Y(p.v) / H * 100) + '%';
+      tip.style.display = 'block';
+    };
+    c.addEventListener('mouseenter', mostrar);
+    c.addEventListener('mouseleave', () => tip.style.display = 'none');
+    c.addEventListener('click', () => { state.periodo = p.m; renderTudo(); });
+  });
+}
+
+/* ---------------- ciclo ---------------- */
+function renderTudo(){ renderTitulo(); renderPeriodos(); renderGrid(); renderChart(); }
+
+function computa(D){
+  state.D = D;
+  state.acc = calcAcumulado(D);
+  state.meses = [];
+  for (let m = 0; m < 12; m++) state.meses[m] = calcMes(D, m);
+}
+
+async function carrega(){
+  const aviso = $('#aviso'); aviso.classList.remove('on');
+  try {
+    if (window.BIBIT_DEMO_DATA) {
+      document.body.classList.add('demo');
+      computa(window.BIBIT_DEMO_DATA);
+      $('#sync-ts').textContent = 'demo';
+      renderTudo();
+      return;
+    }
+    state.D = null; renderTudo(); // skeleton
+    const [growth, vendas, csat, ranking, card2026] = await Promise.all([
+      fetchTasks(LISTA.growth), fetchTasks(LISTA.vendas), fetchTasks(LISTA.csat), fetchTasks(LISTA.ranking), fetchJSON('task/' + CARD_2026 + '?include_subtasks=false')
+    ]);
+    computa(parseTudo({ growth, vendas, csat, ranking, card2026 }));
+    $('#sync-ts').textContent = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    renderTudo();
+  } catch (err) {
+    aviso.classList.add('on');
+    aviso.innerHTML = 'Não consegui carregar os dados do ClickUp (' + err.message +
+      '). Verifique a env <b>CLICKUP_TOKEN</b> no Vercel — diagnóstico em <span class="mono">/api/clickup?diag=1</span>.' +
+      '<button onclick="carrega()">tentar de novo</button>';
+  }
+}
+
+$('#btn-refresh').onclick = carrega;
+window.addEventListener('resize', () => { if (state.D) renderChart(); });
+carrega();
+</script>
+</body>
+</html>
